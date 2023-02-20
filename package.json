@@ -1,0 +1,22 @@
+{
+  "name": "account-detail-service",
+  "version": "0.1.0",
+  "description": "select role for a logged in user",
+  "main": "app.js",
+  "author": "Nordine Bittich",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lblod/account-detail-service"
+  },
+  "keywords": [
+    "mu-semtech",
+    "lblod"
+  ],
+  "dependencies": {
+    "@lblod/mu-auth-sudo": "^0.3.2"
+  }
+}
