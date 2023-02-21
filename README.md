@@ -1,3 +1,3 @@
 ### select-role-service
 
-Select active role.
+Select active role. Experimental.
