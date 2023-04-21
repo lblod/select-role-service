@@ -42,7 +42,7 @@ app.post("/destroy", async function(req, res, next) {
   try {
     await destroyActiveSessionRole(sessionUri);
 
-    return res.status(200).send({});
+    return res.header('mu-auth-allowed-groups', 'CLEAR').status(200).send({});
   } catch (e) {
     console.error("Err: ", e);
     return next(new Error(e.message));
@@ -64,7 +64,7 @@ app.post("/update", async function(req, res, next) {
 
     await updateActiveRole(sessionUri, role);
 
-    return res.status(200).send({});
+    return res.header('mu-auth-allowed-groups', 'CLEAR').status(200).send({});
   } catch (e) {
     return next(new Error(e.message));
   }
